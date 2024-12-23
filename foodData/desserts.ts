@@ -1,4 +1,6 @@
-const DESSERTS = [
+import DessertModel from "../types/DesertModel"
+
+const DESSERTS: Array<DessertModel> = [
     {
         "id": 1,
         "name": "Choco Sundae",
@@ -41,4 +43,4 @@ const DESSERTS = [
     }
 ]
 
-module.exports = DESSERTS
+export default DESSERTS

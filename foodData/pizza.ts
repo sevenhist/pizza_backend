@@ -1,4 +1,6 @@
-const PIZZA = [
+import PizzaModel from "../types/PizzaModel"
+
+const PIZZA: Array<PizzaModel> = [
     {
         "id": 1,
         "name": "Margherita",
@@ -47,7 +49,7 @@ const PIZZA = [
                         "price": 9
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 12
                     }
@@ -75,7 +77,7 @@ const PIZZA = [
                         "price": 9
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 10
                     }
@@ -103,7 +105,7 @@ const PIZZA = [
                         "price": 7
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 9
                     }
@@ -131,7 +133,7 @@ const PIZZA = [
                         "price": 6
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 8
                     }
@@ -299,7 +301,7 @@ const PIZZA = [
                         "price": 5
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 6
                     }
@@ -327,7 +329,7 @@ const PIZZA = [
                         "price": 5
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 7
                     }
@@ -355,7 +357,7 @@ const PIZZA = [
                         "price": 6
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 7
                     }
@@ -383,7 +385,7 @@ const PIZZA = [
                         "price": 7
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 9
                     }
@@ -411,7 +413,7 @@ const PIZZA = [
                         "price": 7
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 9
                     }
@@ -439,7 +441,7 @@ const PIZZA = [
                         "price": 9
                     }
                 ],
-                "medium stuffed crust kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 11
                     }
@@ -490,7 +492,7 @@ const PIZZA = [
                         "price": 11
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 12
                     }
@@ -518,7 +520,7 @@ const PIZZA = [
                         "price": 6
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 8
                     }
@@ -546,7 +548,7 @@ const PIZZA = [
                         "price": 7
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 9
                     }
@@ -574,7 +576,7 @@ const PIZZA = [
                         "price": 5
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 7
                     }
@@ -602,7 +604,7 @@ const PIZZA = [
                         "price": 10
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 12
                     }
@@ -630,7 +632,7 @@ const PIZZA = [
                         "price": 6
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 7
                     }
@@ -658,7 +660,7 @@ const PIZZA = [
                         "price": 7
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 8
                     }
@@ -686,7 +688,7 @@ const PIZZA = [
                         "price": 45
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 50
                     }
@@ -714,7 +716,7 @@ const PIZZA = [
                         "price": 9
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 11
                     }
@@ -742,7 +744,7 @@ const PIZZA = [
                         "price": 7
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 9
                     }
@@ -770,7 +772,7 @@ const PIZZA = [
                         "price": 6
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 7
                     }
@@ -798,7 +800,7 @@ const PIZZA = [
                         "price": 15
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 18
                     }
@@ -826,7 +828,7 @@ const PIZZA = [
                         "price": 7
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 9
                     }
@@ -854,7 +856,7 @@ const PIZZA = [
                         "price": 11
                     }
                 ],
-                "medium stuffed crust-veg kebab": [
+                "mediumstuffedcrustvegkebab": [
                     {
                         "price": 13
                     }
@@ -864,4 +866,4 @@ const PIZZA = [
     }
 ]
 
-module.exports = PIZZA
+export default PIZZA

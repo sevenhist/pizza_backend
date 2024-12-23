@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "ESNext",
+      "moduleResolution": "node",
+      "outDir": "dist",
+      "rootDir": "./", // Specify the root directory of the project
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "resolveJsonModule": true
+    },
+    "include": ["**/*.ts"], // Include all TypeScript files
+    "exclude": ["node_modules", "**/*.js"] // Exclude node_modules and generated JavaScript files
+  }
+  
