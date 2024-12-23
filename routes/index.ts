@@ -1,12 +1,29 @@
-import { Router } from "express";
-import foodController from "../controllers/food-controller.js";  // Импортируем контроллер
+import { Router, Request, Response, NextFunction } from "express";
+import foodController from "../controllers/food-controller.js"; // Import the controller
 
 const router: Router = Router();
 
-router.get("/pizza", (req, res, next) => foodController.getAllPizza(req, res, next));
-router.get("/pizza/:pizzaId", (req, res, next) => foodController.getOnePizza(req, res, next));
-router.get("/desserts", (req, res, next) => foodController.getAllDesserts(req, res, next));
-router.get("/desserts/:dessertId", (req, res, next) => foodController.getOneDessert(req, res, next));
+// Define route handlers with proper type annotations
+router.get(
+  "/pizza",
+  (req: Request, res: Response, next: NextFunction) => foodController.getAllPizza(req, res, next)
+);
 
+router.get(
+  "/pizza/:pizzaId",
+  (req: Request<{ pizzaId: string }>, res: Response, next: NextFunction) =>
+    foodController.getOnePizza(req, res, next)
+);
+
+router.get(
+  "/desserts",
+  (req: Request, res: Response, next: NextFunction) => foodController.getAllDesserts(req, res, next)
+);
+
+router.get(
+  "/desserts/:dessertId",
+  (req: Request<{ dessertId: string }>, res: Response, next: NextFunction) =>
+    foodController.getOneDessert(req, res, next)
+);
 
 export default router;
