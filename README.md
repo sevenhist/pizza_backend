@@ -6,4 +6,5 @@
 5. yarn add ts-node typescript
 6. yarn global add typescript
 7. yarn add --dev @types/cors
-2. yarn start
+8. yarn add --dev @types/node
+(). yarn start
