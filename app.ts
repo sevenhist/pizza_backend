@@ -12,7 +12,16 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cors({
-    origin: process.env.FRONTEND_URL || '*',
+    origin: process.env.FRONTEND_URL, 
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
+// Обработка предзапросов OPTIONS (preflight)
+app.options('*', cors({
+    origin: process.env.FRONTEND_URL,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use('/api', router);
 app.use(errorMiddleware);
