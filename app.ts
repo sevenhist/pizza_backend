@@ -11,9 +11,11 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors({
-    origin: "https://sevenhist.github.io/pizzaiolo",
-}));
+app.use(cors(
+//     {
+//     origin: "https://sevenhist.github.io/pizzaiolo",
+// }
+));
 app.use('/api', router);
 app.use(errorMiddleware);
 
