@@ -3,6 +3,8 @@ import PizzaModel from "../types/PizzaModel";
 import ApiError from "../exceptions/api-error.js";
 import pizza from "../foodData/pizza.js";
 import desserts from "../foodData/desserts.js";
+import drinks from "../foodData/drink.js";
+import DrinkModel from "../types/DrinkModel.js";
 
 class FoodService {
   async getAllPizza(): Promise<PizzaModel[]> {
@@ -31,6 +33,18 @@ class FoodService {
       throw ApiError.NotFound("This dessert does not exist");
     }
     return currentDessert;
+  }
+  async getAllDrinks(): Promise<DrinkModel[]> {
+    return drinks as DrinkModel[];
+  }
+  async getOneDrink(drinkId:string): Promise<DrinkModel>{
+    const currentDrink=drinks.find(
+      (drink:DrinkModel)=>drink.id==Number(drinkId)
+    );
+    if(!currentDrink){
+      throw ApiError.NotFound("This drink does not exist")
+    }
+    return currentDrink
   }
 }
 
