@@ -26,4 +26,15 @@ router.get(
     foodController.getOneDessert(req, res, next)
 );
 
+router.get(
+  "/drinks/:drinkId",
+  (req: Request<{ drinkId: string }>, res: Response, next: NextFunction) =>
+    foodController.getOneDrink(req, res, next)
+);
+
+router.get(
+  "/drinks",
+  (req: Request, res: Response, next: NextFunction) => foodController.getAllDrinks(req, res, next)
+);
+
 export default router;

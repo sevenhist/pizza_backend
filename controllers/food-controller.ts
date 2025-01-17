@@ -36,6 +36,24 @@ const foodController = {
       next(e);
     }
   },
+
+  async getAllDrinks(req: Request, res: Response, next: NextFunction): Promise<void> {
+    try {
+      const drinks = await foodService.getAllDrinks();
+      res.json(drinks);
+    } catch (e) {
+      next(e);
+    }
+  },
+  async getOneDrink(req: Request, res: Response, next: NextFunction): Promise<void> {
+    try {
+      const { drinkId } = req.params;
+      const currentDrink = await foodService.getOneDrink(drinkId);
+      res.json(currentDrink);
+    } catch (e) {
+      next(e);
+    }
+  },
 };
 
 export default foodController;
