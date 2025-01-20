@@ -1,4 +1,34 @@
-# wie man das starten kann
+
+
+This is the backend part of the pizzaiolo project, for information, visit: 
+[https://github.com/sevenhist/pizzaiolo](https://github.com/sevenhist/pizzaiolo)  
+
+## Getting Started
+
+### Prerequisites
+
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/sevenhist/pizza_backend.git
+   ```
+2. Install yarn packages
+   ```sh
+   yarn install
+   ```
+<!-- 3. start the server -->
+
+
+
+
+
+<!-- # dev-archive:
 1. yarn install
 2. yarn add dotenv
 3. yarn add cors
@@ -7,4 +37,4 @@
 6. yarn global add typescript
 7. yarn add --dev @types/cors
 8. yarn add --dev @types/node
-(). yarn start
+(). yarn start -->
