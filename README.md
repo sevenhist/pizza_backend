@@ -9,7 +9,7 @@ This is the backend part of the pizzaiolo project, for information, visit:
 
 * npm
   ```sh
-  npm install npm@latest -g
+  npm install -g yarn@latest
   ```
 
 ### Installation
