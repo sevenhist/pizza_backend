@@ -22,8 +22,14 @@ This is the backend part of the pizzaiolo project, for information, visit:
    ```sh
    yarn install
    ```
-<!-- 3. start the server -->
-
+3. build
+   ```sh
+   yarn build
+   ```
+4. start the server
+   ```sh
+   yarn start
+   ```
 
 
 
